@@ -2,6 +2,23 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
+
+std::ofstream file("list.txt");
+std::ifstream file1("list.txt");
+
+std::vector<std::string> taskList;
+
+void readfile()
+{
+    std::string loadfile;
+
+    while (std::getline(file1, loadfile))
+    { 
+        taskList.push_back(loadfile);
+    }
+
+}
 
 void DisplayMainMenu()
 {
@@ -24,6 +41,7 @@ void AddTask()
     std::getline(std::cin, task);
 
     taskList.push_back(task); // Adds a new element at the end of the vector
+    file << task << std::endl;
     std::cout << "\nYou have added a new task to your to do list.\n";
 }
 

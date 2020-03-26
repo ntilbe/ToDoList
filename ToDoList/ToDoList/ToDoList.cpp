@@ -4,9 +4,7 @@
 #include <string>
 #include <vector>
 #include "ToDoList.h"
-
-std::vector<std::string> taskList;
-
+#include <fstream>
 
 
 int main()
