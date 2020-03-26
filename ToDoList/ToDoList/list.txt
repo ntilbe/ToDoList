@@ -1,1 +1,3 @@
-vacuum
+clean kitchen
+shop
+do stuff

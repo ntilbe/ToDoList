@@ -4,7 +4,7 @@
 #include <vector>
 #include <fstream>
 
-std::ofstream file("list.txt");
+std::ofstream file("list.txt", std::ios_base::app);
 std::ifstream file1("list.txt");
 
 std::vector<std::string> taskList;

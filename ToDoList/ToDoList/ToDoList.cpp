@@ -10,6 +10,7 @@
 int main()
 {
     int choice;
+    readfile();
     do
     {
         DisplayMainMenu();
